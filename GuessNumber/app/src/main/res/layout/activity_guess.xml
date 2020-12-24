@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="visible"
+    tools:context=".GuessActivity"
+    android:background="@drawable/sle">
+
+    <TextView
+        android:id="@+id/textViewHelp"
+        android:layout_width="189dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="180dp"
+        android:layout_marginBottom="109dp"
+        android:cursorVisible="false"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center"
+        android:textColor="#CD1919"
+        android:textSize="14sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewRemainingRight"
+        android:layout_width="189dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="109dp"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center"
+        android:text="Remaining Right : 5"
+        android:textColor="#CD1919"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Remaining Right : 5" />
+
+    <EditText
+        android:id="@+id/editTextEntry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="96dp"
+        android:ems="10"
+        android:hint="Enter Number :"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewHelp" />
+
+    <Button
+        android:id="@+id/buttonGuess"
+        android:layout_width="192dp"
+        android:layout_height="53dp"
+        android:layout_marginBottom="168dp"
+        android:background="@drawable/btn_rounded"
+        android:text="Guess"
+        android:textColor="#C018DD"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
